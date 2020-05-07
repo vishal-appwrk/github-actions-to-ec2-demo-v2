@@ -6,7 +6,18 @@
       "dnsSearchDomains": null,
       "logConfiguration": null,
       "entryPoint": null,
-      "portMappings": [],
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "protocol": "tcp",
+          "containerPort": 80
+        },
+        {
+          "hostPort": 443,
+          "protocol": "tcp",
+          "containerPort": 443
+        }
+      ],
       "command": null,
       "linuxParameters": null,
       "cpu": 0,
@@ -22,7 +33,7 @@
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "ubuntu-latest:latest",
+      "image": "ubuntu-latest/latest",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -39,7 +50,7 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "sample-app"
+      "name": "sample-app-v2"
     }
   ],
   "placementConstraints": [],
@@ -48,8 +59,8 @@
   "compatibilities": [
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:915594551306:task-definition/task-defination:1",
-  "family": "task-defination",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:915594551306:task-definition/task-definition-v2:1",
+  "family": "task-definition-v2",
   "requiresAttributes": [],
   "pidMode": null,
   "requiresCompatibilities": [

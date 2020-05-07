@@ -8,6 +8,7 @@ WORKDIR /app
 # ENV PATH /app/node_modules/.bin:$PATH
 
 # install app dependencies
+COPY jquery-mobile.html ./var/www/html
 COPY jquery-mobile.html ./
 # COPY package-lock.json ./
 # RUN npm install --silent
