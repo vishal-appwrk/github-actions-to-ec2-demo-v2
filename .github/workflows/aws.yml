@@ -81,3 +81,5 @@ jobs:
         service: sample-app-service
         cluster: default
         wait-for-service-stability: true
+
+  # Added the Cluster and Service
